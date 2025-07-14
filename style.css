@@ -1,0 +1,337 @@
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Navbar tweaks */
+.navbar {
+  display: flex;
+  justify-content: end;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0dcaf0 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0dcaf0 !important;
+  text-shadow: 0 0 8px #0dcaf0, 0 0 15px #0dcaf0;
+}
+
+
+/*  Hero section tweaks */
+ .hero {
+  height: 100vh;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #ff0066, #2c5364);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.hero-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #ff0066;
+  text-shadow: 0 0 5px #ff0066;
+}
+
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end) forwards;
+  font-weight: bold;
+  color: #fff;
+  width: 0; /* starts at zero */
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 21ch; } /* adjust to match text length */
+}
+
+.btn-resume {
+  background-color: transparent;
+  border: 1px solid #0dcaf0;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 25px;
+  padding: 10px 20px;
+  border-radius : 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #0dcaf0;
+}
+.btn-resume:hover {
+  background-color: #ff0066;
+  color: #0dcaf0;
+  box-shadow: 0 0 20px #0dcaf0;
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*  About section tweaks */
+.about {
+  background: #111; /* dark theme */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about h2 {
+  font-weight: 700;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.about-img {
+  max-width: 200px;
+  height: 150px;
+  border: 5px solid #0dcaf0;
+  transition: transform 0.4s ease;
+}
+
+.about-img:hover {
+  box-shadow: 0 0 15px #0dcaf0;
+  transform: scale(1.02);
+}
+.tech-stack .stack-item {
+  background: #ffffff10;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #ffffff30;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-stack .stack-item:hover {
+  transform: translateY(-5px);
+  background: #ff0066;
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
+}
+
+.card-title{
+  text-align: center;
+}
+.card-text{
+  text-align: justify;
+}
+
+.container h5:hover {
+  color: #0dcaf0;
+  transition: 0.3s ease-in-out;
+}
+.text-light-muted {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+
+
+
+/*  Project section tweaks */
+.projects {
+  background: #1a1a1a;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 25px rgba(0, 255, 255, 0.15);
+}
+
+.card-title {
+  font-weight: bold;
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 255, 255, 0.2);
+}
+
+.project-img {
+  border-radius: 12px;
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+.glass-card .btn {
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-weight: 500;
+}
+
+.glass-card .btn-outline-light:hover {
+  background-color: #ff0066; /* Bootstrap info color */
+  color: #000;
+  border-color: #ff0066;
+  box-shadow: 0 0 15px #0dcaf0;
+}
+
+
+/* Contact section tweaks */
+.contact {
+  background: radial-gradient(circle at bottom, #0f2027, #203a43, #2c5364);
+}
+/* Input & Textarea Glow */
+.contact input,
+.contact textarea {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #0dcaf0;
+  box-shadow: 0 0 10px #0dcaf0;
+}
+
+/* Button Glow */
+.contact button {
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+}
+
+.contact button:hover {
+  background-color: #ff0066;
+  box-shadow: 0 0 15px #0dcaf0, 0 0 40px #0dcaf0;
+}
+
+.contact a i {
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px #0dcaf0;
+}
+
+.contact a:hover i {
+  transform: scale(1.2);
+  text-shadow: 0 0 15px #0dcaf0, 0 0 30px #0dcaf0;
+}
+
+/* Footer tweaks */
+footer i:hover {
+  text-shadow: 0 0 10px #0dcaf0;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Scroll button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  font-size: 22px;
+  background-color: #ff0066;
+  color: #000;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #0dcaf0;
+  transition: 0.4s;
+}
+
+#scrollTopBtn:hover {
+  box-shadow: 0 0 30px #0dcaf0;
+  transform: scale(1.1);
+}
+
+
+/* Animation Key frames */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.3s;
+}
+.animate-delay-2 {
+  animation-delay: 0.6s;
+}
+.animate-delay-3 {
+  animation-delay: 0.9s;
+}
+
+
